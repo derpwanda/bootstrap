@@ -1,0 +1,49 @@
+/*add background image. remember background-size and position*/
+body{
+  background-image: url(https://images.unsplash.com/photo-1477617722074-45613a51bf6d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c65f6c674b732fdccc98e6cba1b806f&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Passion One', cursive;
+}
+
+/*height:100% allows html to cover the entire window, which forces the background image not to tile*/
+html {
+  height: 100%;
+}
+
+.navbar-inverse {
+  background: #473001;
+}
+
+/*the below selector is very specific was found after using inspect element.
+if not specific, would be overridden by bootstrap defaults*/
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+/*center the page text*/
+#content {
+  text-align: center;
+  padding: 25%;
+}
+
+h1, h3 {
+  color: white;
+}
+
+/*added viewpoint widths to fix text that went off page in mobile. REMOVE LATER? */
+h1 {
+  /*font-weight: 700 >> size taken from Google Font*/
+  font-weight: 700;
+  /*font-size: 5em >> large scalable text*/
+  font-size: 5em;
+  /*responsive font-size: viewport width*/
+  font-size: 6.4vw;
+}
+
+h3 {
+  font-size: 3em;
+  font-size: 4.4vw;
+}
+
+
